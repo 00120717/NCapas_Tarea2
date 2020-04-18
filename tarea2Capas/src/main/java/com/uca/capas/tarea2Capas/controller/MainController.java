@@ -14,7 +14,7 @@ public class MainController {
 	
 	@RequestMapping("/studentdata")
 	public @ResponseBody String tarea2Capas() {
-		String texto = "Nombre: Marvin\n  Apellido: Ramirez  Carnet: 00120717 Carrera: Ing. Informatica  Año cursado: 4 año" ;
+		String texto = "Nombre: Marvin - Apellido: Ramirez - Carnet: 00120717 - Carrera: Ing. Informatica - Año cursado: 4 año" ;
 		return texto;
 	}
 	
@@ -27,7 +27,7 @@ public class MainController {
 		
 		String dias []= {" Domingo ", " Lunes "," Martes "," Miercoles "," Jueves "," Viernes "," Sabado "};
 		
-		if((day < 32)&&(month < 13)&&(year < 10000)){//si la fecha es correcta
+		if((day < 32)&&(month < 13)&&(year < 10000)){
             int a = (14 - month) / 12;
             int y = year - a;
             int m = month + 12 * a - 2;
